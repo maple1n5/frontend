@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .parent {
+        width: 50%;
+        /* 父容器宽度为父级的50%（假设父级是body） */
+        background: lightblue;
+        height: 200px;
+        /* 父容器高度固定为200px */
+        border: 3px solid black;
+    }
+
+    .child {
+        /* 默认宽度：父容器的100%（即50%的body宽度） */
+        /* 默认高度：由内容决定（文字高度） */
+        background: lightgreen;
+        border: 3px dashed red;
+    }
+
+</style>
+<body>
+
+<div style="width: 200px; background: lightblue;">这是一个块元素（div）</div>
+<p style="background: lightgreen;">段落（p）也是块元素</p>
+
+
+<div class="parent">
+    <div class="child">这是一个块元素（div）</div>
+</div>
+
+<p>这是一个段落，里面包含行内元素：
+    <span style="color: red;">红色文本（span）</span>
+    <a href="#" style="color: blue;">蓝色链接（a）</a>
+</p>
+
+
+<img src="image.jpg" style="width: 100px; height: 100px; display: inline-block;">
+<button style="width: 120px; height: 40px; display: inline-block;">按钮</button>
+
+</body>
+</html>

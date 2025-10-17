@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /*
+             元素添加浮动属性之后
+                1.当前元素会脱离标准流的控制，俗称脱标
+                2.脱标以后将自己原来的位置漏给了下方标准流的盒子
+                3.浮动的元素脱标之后，会具有行内块的属性(控制宽高，可以一行显示多列)
+             */
+            float: left;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            float: left;
+        }
+
+        h1 {
+            height: 40px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box1">黄色</div>
+<div class="box2">红色</div>
+<!-- 元素浮动盖不住文字 -->
+<h1>一级标题</h1>
+
+</body>
+</html>
